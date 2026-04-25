@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Porto<span>folio</span></h1>
+
+  <!-- BURGER -->
+  <div class="burger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="navMenu">
+    <a href="#about">Skills</a>
+    <a href="#projects">Project</a>
+    <a href="#footer">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <p class="greeting">HELLO, I'M</p>
+      <h2>Nur <span>Siskarimah</span></h2>
+      <p class="desc">Saya adalah siswi kelas 11 yang bersekolah di SMK
+          Negeri 1 Ciomas jurusan Pengembangan
+          Perangkat Lunak dan Gim. Saya menyukai
+          hal baru dan juga menyukai hal yang
+          berkaitan dengan video atau photo editing
+</p>
+      <a href="cv nur siskarimah.pdf" download class="btn">Download CV</a>
+    </div>
+
+    <div class="hero-img">
+      <img src="fotosiska.jpeg">
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about reveal">
+<section id="about" class="about">
+  <h2>My Skills</h2>
+
+  <div class="skills">
+    <div class="skill-card"><img src="capcut.png"><h3>CapCut</h3><div class="stars">★★☆☆☆</div><p>Mampu mengedit video dengan transisi, efek, dan audio.</p></div>
+    <div class="skill-card"><img src="canva.jpg"><h3>Canva</h3><div class="stars">★★★★☆</div><p>Menguasai dasar editing foto dan pengolahan visual</p></div>
+    <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"><h3>Figma</h3><div class="stars">★★★★☆</div><p>Bisa membuat desain UI/UX dan prototype sederhana.</p></div>
+    <div class="skill-card"><img src="word.jpg"><h3>Microsoft Word</h3><div class="stars">★★★⯪☆</div><p>Menguasai pengolahan dokumen menggunakan Microsoft Word</p></div>
+    <div class="skill-card"><img src="excel.png"><h3>Microsoft Excel</h3><div class="stars">★★⯪☆☆</div><p>Mampu menggunakan Microsoft Excel untuk pengolahan data</p></div>
+    <div class="skill-card"><img src="vscode.jpg"><h3>VS Code</h3><div class="stars">★⯪☆☆☆</div><p>Menggunakan Visual Studio Code sebagai code editor</p></div>
+  </div>
+</section>
+</section>
+
+
+<!-- BAGIAN PROJECT (FIXED) -->
+ <section id="projects" class="projects reveal">
+<section id="projects" class="projects">
+  <h2>My Project</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterProject('all')" class="active">All</button>
+    <button onclick="filterProject('web')">Web</button>
+    <button onclick="filterProject('design')">Design</button>
+  </div>
+
+  <div>
+
+    <div class="card web">
+      <img src="webketerlambatan.png">
+      <div class="card-content">
+        <h3>Website Absensi Keterlambatan</h3>
+        <p>Website untuk mencatat keterlambatan siswa. Saya membantu membuat design dari tampilan web tersebut</p>
+        <button onclick="lihatProject('absensi')">Lihat</button>
+      </div>
+    </div>
+
+    <div class="card web">
+      <img src="notes.png">
+      <div class="card-content">
+        <h3>Aplikasi Catatan</h3>
+        <p>Aplikasi catatan dengan HTML, CSS, dan JavaScript.</p>
+        <button onclick="lihatProject('notes')">Lihat</button>
+      </div>
+    </div>
+
+    <div class="card web">
+      <img src="webkomodo.png">
+      <div class="card-content">
+        <h3>Website Komodo</h3>
+        <p>Website informasi tentang Komodo Dragon.</p>
+        <button onclick="lihatProject('komodo')">Lihat</button>
+      </div>
+    </div>
+
+    <!-- design -->
+     <!-- design 1 -->
+    <div class="card design">
+      <img src="blacksquad.png">
+      <div class="card-content">
+        <h3>Design 1</h3>
+        <p>Contoh design yang saya buat</p>
+        <button onclick="lihatDesign('blacksquad.png')">Lihat</button>
+      </div>
+    </div>
+
+    <!-- design 2 -->
+    <div class="card design">
+      <img src="asamitaka.png">
+      <div class="card-content">
+        <h3>Design 2</h3>
+        <p>Contoh design yang saya buat</p>
+        <button onclick="lihatDesign('asamitaka.png')">Lihat</button>
+      </div>
+    </div>
+
+    <!-- design 3 --> 
+    <div class="card design">
+      <img src="yami.png">
+      <div class="card-content">
+        <h3>Design 3</h3>
+        <p>Contoh design yang saya buat</p>
+        <button onclick="lihatDesign('yami.png')">Lihat</button>
+      </div>
+    </div>
+
+    <!-- design 4 -->
+    <div class="card design">
+      <img src="skar.png">
+      <div class="card-content">
+        <h3>Design 4</h3>
+        <p>Contoh design yang saya buat</p>
+        <button onclick="lihatDesign('skar.png')">Lihat</button>
+      </div>
+    </div>
+
+    <!-- design 5 -->
+    <div class="card design">
+      <img src="ren.png">
+      <div class="card-content">
+        <h3>Design 5</h3>
+        <p>Contoh design yang saya buat</p>
+        <button onclick="lihatDesign('ren.png')">Lihat</button>
+      </div>
+    </div>
+
+    <!-- design 6 -->
+    <div class="card design">
+      <img src="green.png">
+      <div class="card-content">
+        <h3>Design 6</h3>
+        <p>Contoh design yang saya buat</p>
+        <button onclick="lihatDesign('green.png')">Lihat</button>
+      </div>
+    </div>
+
+    <!-- design 7 -->
+    <div class="card design">
+      <img src="happy.png">
+      <div class="card-content">
+        <h3>Design 7</h3>
+        <p>Contoh design yang saya buat</p>
+        <button onclick="lihatDesign('happy.png')">Lihat</button>
+      </div>
+    </div>
+
+    <!-- design 8 -->
+    <div class="card design">
+      <img src="kartiniday.jpeg">
+      <div class="card-content">
+        <h3>Design 8</h3>
+        <p>Contoh design yang saya buat</p>
+        <button onclick="lihatDesign('kartiniday.jpeg')">Lihat</button>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+</section>
+
+<footer id="footer" class="reveal">
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <h3>Kontak</h3>
+      <div class="footer-contacts">
+        <a href="mailto:nursiskarimah@gmail.com">
+          <i class="fas fa-envelope"></i> nursiskarimah@gmail.com
+        </a>
+        <a href="https://maps.app.goo.gl/h3jk2SNkP7TGFavX7">
+          <i class="fas fa-school"></i> SMK Negeri 1 Ciomas
+        </a>
+        <a href="https://github.com/NurSiska-rimah" target="_blank">
+          <i class="fab fa-github"></i> NurSiska-rimah
+        </a>
+        <a href="https://www.instagram.com/justxnsr" target="_blank">
+          <i class="fab fa-instagram"></i> @justxnsr
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4899270312976!2d106.75621537355995!3d-6.585857964376941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5457e0e3bcf%3A0x58481d58737539c0!2sVocational%20High%20School%20State%201%20of%20Ciomas!5e0!3m2!1sen!2sid!4v1777115296116!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <hr class="footer-divider">
+  <p class="footer-copy">© 2026 Nur Siskarimah</p>
+</footer>
+</footer>
+
+<!-- POPUP -->
+<div id="popup">
+  <img id="popupImg">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
